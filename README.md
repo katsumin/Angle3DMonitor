@@ -37,7 +37,7 @@
         1. VisualStudioで、ソリューションAngle3Dmonitor.slnを開きます。
         1. VisualStudio上で、Angle3DMonitor.iOSを「スタートアッププロジェクトとして設定」します。
         1. 実機（iPhone7など）をMacにUSB接続し、「デバッグの開始」を実行します。
-            - 当方は、Apple Developer Programに登録しておらず、iOSによる実機デバッグにおいて、多少の手順が必要になります。（ここでは説明を省略しますが、「ios実機デバッグ　無料」などでググってください。）
+            - 当方は、Apple Developer Programに登録しておらず、iOSによる実機デバッグにおいて、多少の手順が必要になります。（ここでは説明を省略しますが、「ios実機デバッグ　無料」などでググってください。）
     - Androidの場合
         1. VisualStudioで、ソリューションAngle3Dmonitor.slnを開きます。
         1. VisualStudio上で、Angle3DMonitor.Droidを「スタートアッププロジェクトとして設定」します。
