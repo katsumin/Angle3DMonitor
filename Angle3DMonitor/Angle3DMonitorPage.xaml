@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage Title="Angle 3D Monitor"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Angle3DMonitor"
+    x:Class="Angle3DMonitor.Angle3DMonitorPage">
+    <StackLayout VerticalOptions="Center">
+        <Button Text="View Test" VerticalOptions="Center" HorizontalOptions="Center" Clicked="ViewTest_Clicked"/>
+        <Button Text="Peripherals Search" VerticalOptions="Center" HorizontalOptions="Center" Clicked="PeripheralsSearch_Clicked"/>
+    </StackLayout>
+</ContentPage>

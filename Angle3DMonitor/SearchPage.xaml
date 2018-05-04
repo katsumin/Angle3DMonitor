@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage Title="Angle 3D Monitor(BLE list)"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Angle3DMonitor.SearchPage">
+    <ContentPage.Content>
+        <StackLayout Padding="12, 12, 12, 40" VerticalOptions="FillAndExpand">
+            <ListView x:Name="ListView1" HasUnevenRows="true" ItemSelected="ListView1_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <StackLayout>
+                                    <Label Text="{Binding Name, StringFormat='Name:{0}'}" FontAttributes="Bold"/>
+                                </StackLayout>
+                                <StackLayout Padding="10,0,0,0">
+                                    <Label Text="{Binding Id, StringFormat='ID:{0}'}" />
+                                    <Label Text="{Binding Rssi, StringFormat='RSSI:{0}'}" />
+                                    <Label Text="{Binding State, StringFormat='STATE:{0}'}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator x:Name="connectingIndicator" IsRunning="false" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="80" HeightRequest="80"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

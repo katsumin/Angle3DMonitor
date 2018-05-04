@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:urho="clr-namespace:Urho.Forms;assembly=Urho.Forms"
+    x:Class="Angle3DMonitor.UrhoPage">
+    <ContentPage.Content>
+        <StackLayout Padding="12, 12, 12, 12" VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <urho:UrhoSurface x:Name="urhoSurface" VerticalOptions="FillAndExpand" />
+            <Slider x:Name="rotationSliderX" Minimum="-90.0" Maximum="90.0" IsVisible="true"/>
+            <Slider x:Name="rotationSliderY" Minimum="-90.0" Maximum="90.0" IsVisible="true"/>
+            <Slider x:Name="rotationSliderZ" Minimum="-90.0" Maximum="90.0" IsVisible="true"/>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="angleX" Text="X:    0.0°" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+                <Label x:Name="angleY" Text="Y:    0.0°" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Button Text="Reset" Clicked="Reset_Clicked" IsEnabled="true" IsVisible="true" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
