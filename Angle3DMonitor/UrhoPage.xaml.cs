@@ -75,13 +75,6 @@ namespace Angle3DMonitor
                     string value = e.Characteristic.StringValue;
                     char[] separator = { ',', '=' };
                     string[] parsed = value.Split(separator);
-                    //if (parsed.Length == 3)
-                    //{
-                    //    float roll = float.Parse(parsed[0].Trim());
-                    //    float pitch = float.Parse(parsed[1].Trim());
-                    //    float yaw = float.Parse(parsed[2].Trim());
-                    //    Rotate(-roll, -pitch, 0.0F);
-                    //}
                     if (parsed.Length == 4 && parsed[0] == "a")
                     {
                         // a=xxx,xxx,xxx
