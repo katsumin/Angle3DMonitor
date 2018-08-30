@@ -1,5 +1,6 @@
-#define MPU9250_INSDE
 #include <M5Stack.h>
+#include "utility/MPU9250.h"
+#include "utility/quaternionFilters.h"
 #include <BLEDevice.h>
 #include <BLEServer.h>
 #include <BLEUtils.h>
